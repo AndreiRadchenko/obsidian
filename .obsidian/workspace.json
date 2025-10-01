@@ -79,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Live sync.md",
-                "mode": "preview",
+                "file": "Notes/MCP resource link.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Live sync"
+              "title": "MCP resource link"
             }
           }
         ],
@@ -120,7 +120,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:note obsidian obsidian/plugin",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -152,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -242,14 +242,23 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "c02d47024dfa3cc6",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -267,13 +276,14 @@
       "obsidian-livesync:Show Log": false,
       "obsidian-livesync:Replicate": false,
       "obsidian-livesync:P2P Replicator": false,
-      "obsidian-livesync:Show Customization sync": false
+      "obsidian-livesync:Show Customization sync": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "85fbf8ca22cf4c48",
   "lastOpenFiles": [
-    "Notes/Notes Dashboard.md",
     "Notes/Live sync.md",
+    "Notes/Notes Dashboard.md",
     "Notes/Untitled.md",
     "Notes/MCP - Model Context Protocol Tutorial.md",
     "Notes/MCP resource link.md",

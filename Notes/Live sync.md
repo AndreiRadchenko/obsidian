@@ -14,7 +14,6 @@ Description:: Live sync plugin
 ## Note
 
 [Self-hosted LiveSync](https://github.com/vrtmrz/obsidian-livesync?tab=readme-ov-file)
-
 [Setup a CouchDB server](https://github.com/vrtmrz/obsidian-livesync/blob/main/docs/setup_own_server.md#setup-a-couchdb-server)
 
 ---
