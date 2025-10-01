@@ -1,0 +1,12 @@
+{
+  "accentColor": "#465fdd",
+  "theme": "system",
+  "cssTheme": "Things",
+  "enabledCssSnippets": [
+    "Custom style",
+    "Multi columns",
+    "Pinned Pages",
+    "tailwind"
+  ],
+  "baseFontSize": 16
+}
