@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/Learning Dashboard.md",
-                "mode": "source",
+                "file": "Projects/Home Assistant/VoiceCommander.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Learning Dashboard"
+              "title": "VoiceCommander"
             }
           },
           {
@@ -27,12 +27,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/Resources Dashboard.md",
+                "file": "Projects/Home Assistant/GPT Voice Assist.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resources Dashboard"
+              "title": "GPT Voice Assist"
+            }
+          },
+          {
+            "id": "1a191950a073784e",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "_data_/excalidraw/gpt voice assist 2025-12-06 18.29.08.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "gpt voice assist 2025-12-06 18.29.08"
             }
           },
           {
@@ -64,43 +76,46 @@
             }
           },
           {
-            "id": "2e0e7d67859e06fe",
-            "type": "leaf",
-            "state": {
-              "type": "p2p-replicator",
-              "state": {},
-              "icon": "waypoints",
-              "title": "Peer-to-Peer Replicator"
-            }
-          },
-          {
             "id": "85fbf8ca22cf4c48",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Live sync.md",
+                "file": "Projects/Home Assistant/GPT Voice Assist.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Live sync"
+              "title": "GPT Voice Assist"
             }
           },
           {
-            "id": "8411a6e3ba4953ed",
+            "id": "5d9b2e874b4a8983",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "excalidraw",
               "state": {
-                "currentVersion": "1.9.14"
+                "file": "_data_/excalidraw/Drawing 2025-12-06 18.06.49.md"
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.14"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-12-06 18.06.49"
+            }
+          },
+          {
+            "id": "92ec80ea4f718e79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Home Assistant/GPT Voice Assist.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GPT Voice Assist"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -132,7 +147,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:voice-assist",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,13 +177,22 @@
               "icon": "stacked-levels",
               "title": "Tag Folder"
             }
+          },
+          {
+            "id": "a2a2e696e96e0d82",
+            "type": "leaf",
+            "state": {
+              "type": "tagfolder-view",
+              "state": {},
+              "icon": "stacked-levels",
+              "title": "Tag Folder"
+            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 203.5
   },
   "right": {
     "id": "a60f7122a537c574",
@@ -281,7 +305,6 @@
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "templater-obsidian:Templater": false,
@@ -289,47 +312,47 @@
       "obsidian-livesync:Replicate": false,
       "obsidian-livesync:P2P Replicator": false,
       "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-livesync:Show Customization sync": false
     }
   },
-  "active": "8411a6e3ba4953ed",
+  "active": "bf2267769ae8874b",
   "lastOpenFiles": [
-    "Notes/MCP resource link.md",
-    "flag_fetch.md",
-    "Notes/Live sync.md",
-    "Notes/Notes Dashboard.md",
-    "Notes/Untitled.md",
-    "Notes/MCP - Model Context Protocol Tutorial.md",
-    "Notes/Claude Desktop Installation Ukrainian.md",
-    "Notes/Claude Desktop Installation.md",
-    "Notes/Claude Desktop on Windows.md",
-    "Notes/ClaudeDesktopWindows.md",
-    "Notes/Docker Desktop Installation Guide - Windows.md",
-    "Notes/Install Claude Desktop on Windows.md",
-    "Notes/Enceladus Geysers Potential Causes.md",
-    "Notes/Enceladus Ice Thickness.md",
-    "Notes/Solar Cycle Duration.md",
-    "Notes/Radiation Belt Locations.md",
-    "pininfo.md",
-    "notes/Claude Desktop Installation Ukrainian.md",
-    "notes/Claude Desktop on Windows.md",
-    "notes/Claude Desktop Installation.md",
-    "notes/ClaudeDesktopWindows.md",
-    "_data_/templates/general/Note page.md",
-    "Resources/Docker Desktop Windows.md",
-    "Resources/SQL MariaDB.md",
+    "Projects/Home Assistant/Untitled.base",
+    "Projects/Home Assistant/VoiceCommander.md",
+    "Projects/Home Assistant/GPT Voice Assist.md",
+    "Projects/Home Assistant/Untitled 1.base",
+    "_data_/excalidraw/gpt voice assist 2025-12-06 18.29.08.md",
     "Resources/Resources Dashboard.md",
-    "Resources/Linux CLI.md",
+    "Learning/Learning Dashboard.md",
+    "_data_/excalidraw/Drawing 2025-12-06 18.06.49.md",
+    "_data_/excalidraw",
+    "Projects/Top Secret Project/Meetings/2023-10-29 - Example Meeting Note.md",
+    "Projects/Top Secret Project/Meetings/Untitled.md",
+    "Projects/Top Secret Project/Notes/All Notes.md",
+    "Projects/Top Secret Project/Notes/Install clients.md",
+    "Untitled.md",
+    "Element Structure and Formats.md",
+    "Dashboard.md",
+    "README.md",
+    "Projects/Home Assistant/Untitled.md",
+    "Projects/Top Secret Project/Home.md",
+    "Projects/Projects.md",
+    "Resources/Docker.md",
+    "Projects/Home Assistant",
+    "Notes/MCP - Model Context Protocol Tutorial.md",
+    "Concept Board/Drawings/Satellite Concept Drawing.md",
+    "Journal/Journal Dashboard.md",
+    "Spaces/Formulas/Tsiolkovsky Rocket Equation.md",
+    "Resources/Prompt Engineering Best Practices.md",
+    "Resources/Untitled.md",
+    "Resources/Prompt Engineering UA-01.md",
     "Learning/LLM/Assignments",
     "Learning/LLM/Notes",
     "Learning/LLM/Lectures",
     "Learning/LLM",
     "Untitled.base",
     "Spaces/Obsidian Development",
-    "Spaces/Untitled",
-    "Inbox",
-    "_data_/scripts/javascript/vaultplugins.js",
-    "_data_/scripts/vaultplugins.js",
     "_data_/media/banners/banner-personal-01.jpg",
     "_data_/media/banners/cosmic-dawn-initiative.png",
     "_data_/media/banners/cosmic-dawn-initiative.png",

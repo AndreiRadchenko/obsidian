@@ -3,7 +3,7 @@ date_created: 2023-10-29
 date_modified: 2023-10-29
 document_type: meeting
 project: Top Secret Project
-tags: top-secret-project meeting
+tags:
 ---
 [[Projects/Top Secret Project/Home|Home]] | [[Projects/Top Secret Project/Meetings/All Meetings|Meetings]] | [[Projects/Top Secret Project/Notes/All Notes|Notes]] | [[Projects/Top Secret Project/References|References]]
 # 2023-10-29 - Example Meeting Note

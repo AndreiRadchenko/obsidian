@@ -6,6 +6,7 @@ tags:
   - resource
   - domain/software-dev
   - domain/ai
+  - "#Docker"
 ---
 [[Resources Dashboard|Resources]] / **[[Docker|Docker]]**
 # Docker

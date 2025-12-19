@@ -8,6 +8,7 @@ document_type: dashboard
 include_in_navbar: true
 navbar_name: Concept Board
 tags: dashboard concept-board
+banner_x: 0.5
 ---
 
 ```dataviewjs
