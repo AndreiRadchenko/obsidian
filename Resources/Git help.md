@@ -5,6 +5,7 @@ document_type: resource
 tags:
   - resource
   - domain/software-dev
+  - "#git"
 ---
 [[Resources/Resources Dashboard|Resources]] / **[[Resources/Git help|Git help]]**
 # Git help
@@ -242,6 +243,108 @@ After github access token has been updated, you need to run next command in bash
         git config credential.helper store
 
 </details>
+
+---
+
+# Git Commands Summary - Home Assistant Config Repo
+
+**Purpose**: Clean Home Assistant config repo from leaked secrets (Google credentials, SSH keys, Amazon OAuth) that blocked GitHub pushes due to push protection, while making `.gitignore` properly exclude sensitive files.
+
+**Problem Solved**:
+- GitHub push blocked: `GH013: Repository rule violations found` (secrets in commit history)
+- `.gitignore` not working (tracked secrets.yaml, SERVICE_ACCOUNT.json, .ssh/, databases)
+- Maintain config files while removing all sensitive data from git
+
+***
+
+## 1. Check Current State
+
+```bash
+git ls-files                          # List all tracked files
+git status                            # Show staged/unstaged files
+git check-ignore -v secrets.yaml      # Verify ignore rule works
+git log --oneline                     # View commit history
+```
+
+## 2. Fix .gitignore (Corrected Version)
+
+```gitignore
+# Folders
+.storage/ .cloud/ .ssh/ tts/ custom_components/ www/ image/ deps/ scans/ blueprints/
+
+# Databases
+*.db *.db-shm *.db-wal home-assistant_v2.db* zigbee.db*
+
+# Logs
+*.log *.log.* home-assistant.log*
+
+# Secrets
+secrets.yaml ip_bans.yaml known_devices.yaml SERVICE_ACCOUNT.json *.json .google.token .HA_VERSION .ha_run.lock .shopping_list.json
+
+# Keep
+!.gitignore !README.md !Readme.md !configuration.yaml !automations.yaml !scripts.yaml !scenes.yaml !cameras.yaml !covers.yaml !templates.yaml !templates-old.yaml
+```
+
+## 3. Apply .gitignore to Already Tracked Files
+
+```bash
+git rm -r --cached .    # Remove ALL from tracking (files stay on disk)
+git add .               # Re-add according to .gitignore
+git status              # Verify
+git commit -m "Apply .gitignore"
+```
+
+## 4. Remove Secrets from History (Fresh Start)
+
+```bash
+# Create orphan branch (no history)
+git checkout --orphan fresh-start
+
+# Stage clean files
+git add .
+
+# Verify clean staging
+git status
+git ls-files | grep -E "secrets|SERVICE|\.ssh|\.db|\.log"
+
+# Commit clean state
+git commit -m "Initial commit - clean history"
+
+# Replace main
+git branch -D main
+git branch -m main
+
+# Force push to GitHub
+git push -f origin main
+```
+
+## 5. Verify Success
+
+```bash
+git log --oneline                    # 1 commit only
+git ls-files | wc -l                 # Reasonable file count
+git ls-files | grep secrets           # Should be empty
+```
+
+## 6. Pre-Commit Checklist
+
+```bash
+git status                           # Check staged files
+git diff --cached                    # Review changes
+git ls-files | grep -E "secrets|db|log|ssh"  # No secrets
+```
+
+***
+
+**Key Points:**
+- `.gitignore` only works on **untracked** files
+- Use `git rm --cached` to untrack files without deleting them  
+- Orphan branch (`--orphan`) = fresh history with current files
+- `git push -f` overwrites GitHub history (coordinate with collaborators)
+- **Rotate all leaked credentials** after cleanup (Google keys, SSH keys, Amazon OAuth)
+
+Sources
+
 
 
 

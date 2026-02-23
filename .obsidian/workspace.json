@@ -11,44 +11,30 @@
             "id": "bf2267769ae8874b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Projects/Home Assistant/VoiceCommander.md",
-                "mode": "preview",
-                "source": false
+                "file": "_data_/media/images/image.jpg"
               },
-              "icon": "lucide-file",
-              "title": "VoiceCommander"
+              "icon": "lucide-image",
+              "title": "image"
             }
           },
           {
-            "id": "ee1478d2d7e48597",
+            "id": "890412b42328447a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Home Assistant/GPT Voice Assist.md",
+                "file": "Element Structure and Formats.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GPT Voice Assist"
+              "title": "Element Structure and Formats"
             }
           },
           {
-            "id": "1a191950a073784e",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "_data_/excalidraw/gpt voice assist 2025-12-06 18.29.08.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "gpt voice assist 2025-12-06 18.29.08"
-            }
-          },
-          {
-            "id": "1fe6c9153fca4744",
+            "id": "44685b843d57f7a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -62,60 +48,21 @@
             }
           },
           {
-            "id": "99bc200f7563c59d",
+            "id": "6c66d686ce22bbf1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/MCP - Model Context Protocol Tutorial.md",
+                "file": "Projects/Culture Case/Android ADB Integration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MCP - Model Context Protocol Tutorial"
-            }
-          },
-          {
-            "id": "85fbf8ca22cf4c48",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Home Assistant/GPT Voice Assist.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GPT Voice Assist"
-            }
-          },
-          {
-            "id": "5d9b2e874b4a8983",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "_data_/excalidraw/Drawing 2025-12-06 18.06.49.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-12-06 18.06.49"
-            }
-          },
-          {
-            "id": "92ec80ea4f718e79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Home Assistant/GPT Voice Assist.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GPT Voice Assist"
+              "title": "Android ADB Integration"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -147,7 +94,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:voice-assist",
+                "query": "tag:culture-case note",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -188,11 +135,12 @@
               "title": "Tag Folder"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 203.5
+    "width": 288.5
   },
   "right": {
     "id": "a60f7122a537c574",
@@ -308,60 +256,57 @@
       "omnisearch:Omnisearch": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "templater-obsidian:Templater": false,
-      "obsidian-livesync:Show Log": false,
-      "obsidian-livesync:Replicate": false,
-      "obsidian-livesync:P2P Replicator": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-livesync:Show Customization sync": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "bf2267769ae8874b",
+  "active": "0d898f7a13d78898",
   "lastOpenFiles": [
-    "Projects/Home Assistant/Untitled.base",
-    "Projects/Home Assistant/VoiceCommander.md",
+    "Projects/Culture Case/Android ADB Integration.md",
+    "Resources/Git help.md",
+    "Projects/Culture Case/Music Assistant.md",
+    "Projects/Culture Case/Cloudflare access.md",
+    "Projects/Culture Case/Teclast N150.md",
+    "Projects/Culture Case/ESP Ethernet.md",
+    "Element Structure and Formats.md",
+    "_data_/media/images/image.jpg",
+    "_data_/media/images/squeezelite.jpeg.jpeg",
+    "pininfo.md",
+    "README.md",
     "Projects/Home Assistant/GPT Voice Assist.md",
-    "Projects/Home Assistant/Untitled 1.base",
+    "_data_/excalidraw/Drawing 2025-12-06 18.06.49.md",
+    "Notes/MCP - Model Context Protocol Tutorial.md",
     "_data_/excalidraw/gpt voice assist 2025-12-06 18.29.08.md",
+    "_data_/media/images/IMG_5720.jpeg",
+    "_data_/media/images",
+    "Projects/Culture Case",
+    "Notes/MCP resource link.md",
+    "Notes/N8N.md",
+    "Projects/Home Assistant/VoiceCommander.md",
+    "Projects/Projects.md",
+    "Projects/Home Assistant/Untitled.base",
+    "_data_/media/banners/banner-concept-board.jpg",
+    "Projects/Home Assistant/Untitled 1.base",
+    "_data_/media/banners/banner-dashboard.jpg",
     "Resources/Resources Dashboard.md",
     "Learning/Learning Dashboard.md",
-    "_data_/excalidraw/Drawing 2025-12-06 18.06.49.md",
     "_data_/excalidraw",
     "Projects/Top Secret Project/Meetings/2023-10-29 - Example Meeting Note.md",
     "Projects/Top Secret Project/Meetings/Untitled.md",
     "Projects/Top Secret Project/Notes/All Notes.md",
     "Projects/Top Secret Project/Notes/Install clients.md",
     "Untitled.md",
-    "Element Structure and Formats.md",
     "Dashboard.md",
-    "README.md",
     "Projects/Home Assistant/Untitled.md",
-    "Projects/Top Secret Project/Home.md",
-    "Projects/Projects.md",
-    "Resources/Docker.md",
     "Projects/Home Assistant",
-    "Notes/MCP - Model Context Protocol Tutorial.md",
-    "Concept Board/Drawings/Satellite Concept Drawing.md",
-    "Journal/Journal Dashboard.md",
-    "Spaces/Formulas/Tsiolkovsky Rocket Equation.md",
-    "Resources/Prompt Engineering Best Practices.md",
-    "Resources/Untitled.md",
-    "Resources/Prompt Engineering UA-01.md",
     "Learning/LLM/Assignments",
     "Learning/LLM/Notes",
     "Learning/LLM/Lectures",
     "Learning/LLM",
-    "Untitled.base",
-    "Spaces/Obsidian Development",
     "_data_/media/banners/banner-personal-01.jpg",
     "_data_/media/banners/cosmic-dawn-initiative.png",
     "_data_/media/banners/cosmic-dawn-initiative.png",
     "_data_/media/banners/banner-personal-02.jpg",
-    "_data_/media/banners/banner-proprietary-01.jpg",
-    "_data_/media/banners/banner-proprietary-02.jpg",
-    "_data_/media/dashboard-preview.png",
-    "_data_/media/255020736-42c6f878-46e3-4602-9224-5d92918bef07.png",
-    "_data_/media/profile-picture-placeholder.jpg",
-    "_data_/media/example-image-02.png"
+    "_data_/media/banners/banner-proprietary-01.jpg"
   ]
 }
