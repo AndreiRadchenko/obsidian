@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Culture Case/Android ADB Integration.md",
+                "file": "Projects/Home Assistant/Proxmox HA Cloudflare Tunnel Setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Android ADB Integration"
+              "title": "Proxmox HA Cloudflare Tunnel Setup"
             }
           }
         ],
@@ -135,8 +135,7 @@
               "title": "Tag Folder"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -260,12 +259,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "0d898f7a13d78898",
+  "active": "b086af801e8a41b7",
   "lastOpenFiles": [
+    "Projects/Home Assistant/Cloudflared in proxmox LXC.md",
+    "Projects/Home Assistant/Proxmox HA Cloudflare Tunnel Setup 1.md",
+    "Projects/Home Assistant/Proxmox HA Cloudflare Tunnel Setup.md",
+    "Resources/Prompt Engineering UA-01.md",
+    "Projects/Home Assistant/Use free domain with cloudflare.md",
+    "Projects/Culture Case/Cloudflare access.md",
     "Projects/Culture Case/Android ADB Integration.md",
     "Resources/Git help.md",
     "Projects/Culture Case/Music Assistant.md",
-    "Projects/Culture Case/Cloudflare access.md",
     "Projects/Culture Case/Teclast N150.md",
     "Projects/Culture Case/ESP Ethernet.md",
     "Element Structure and Formats.md",
@@ -293,11 +297,6 @@
     "_data_/excalidraw",
     "Projects/Top Secret Project/Meetings/2023-10-29 - Example Meeting Note.md",
     "Projects/Top Secret Project/Meetings/Untitled.md",
-    "Projects/Top Secret Project/Notes/All Notes.md",
-    "Projects/Top Secret Project/Notes/Install clients.md",
-    "Untitled.md",
-    "Dashboard.md",
-    "Projects/Home Assistant/Untitled.md",
     "Projects/Home Assistant",
     "Learning/LLM/Assignments",
     "Learning/LLM/Notes",

@@ -17,7 +17,7 @@ Description:: How to get access to entire local network through cloudflare
 ## Note
 
 ## Access Entire Local Network via CIDR Routing
-
+[[Cloudflare access]]
 If you want to access your whole home network by IP address:
 
 - Navigate to your Tunnel Settings:
