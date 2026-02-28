@@ -88,6 +88,8 @@ Go to: [https://one.dash.cloudflare.com/6a817637126870fc68bc7a443ca469c4/team-re
 - Click on Device profiles
 - Select the profile your iOS device is using, or create a new one
 
+![[Screenshot 2026-02-28 at 18.24.05.png]]
+
 ### 3. Configure Split Tunnels
 
 - Scroll down to the Split Tunnels section
@@ -122,6 +124,9 @@ In Include mode:
 
 - Install Cloudflare WARP client [https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/warp/download-warp/#macos](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/warp/download-warp/#macos)
 - In Preferences -> Account login with the name you obtain during setup device profile
+
+![[Image 28.02.2026 at 17.28.png]]
+
 - in Finder in find field type: `smb://192.168.1.2` - IP of your samba server, select URL. 
 - Press `>>` select action -> services -> Open URL
 - in the opened windows enter samba credentials
