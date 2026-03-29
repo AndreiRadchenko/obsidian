@@ -257,6 +257,26 @@ After github access token has been updated, you need to run next command in bash
 
 ***
 
+### Add new pc to github 
+
+1. Create ssh key on local pc
+
+```bush
+ssh-keygen -t ed25519 -C "d4100kx@gmail.com"
+```
+2. Add key to the github ssh keys
+```bush
+cat ~/.ssh/id_ed25519.pub
+```
+3. Change https github access to ssh
+```bush
+ssh -T git@github.com
+git remote set-url origin git@github.com:AndreiRadchenko/Homeassistant/
+git remote -v
+git push --set-upstream origin master
+```
+
+
 ## 1. Check Current State
 
 ```bash
