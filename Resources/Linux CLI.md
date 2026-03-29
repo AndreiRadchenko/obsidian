@@ -63,6 +63,13 @@ connect to remote server:
 
 `/home/username/.ssh` - if authentification problem occur delete known-host file
 
+### Mount SSHFS on Mac
+```
+mkdir -p ~/sshfs_local 
+sshfs -o defer_permissions,volname=SSHFS_ROOT andrii@100.76.127.96:/home/andrii/suppoint-bot ~/sshfs_local
+```
+
+
 ## Basic File and Folder Actions
 
 If your Ubuntu Server only shows 64 GB available on a 128 GB SSD, here are the **most likely reasons** and how to check/fix them:
