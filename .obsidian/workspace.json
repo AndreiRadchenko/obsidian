@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bf2267769ae8874b",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "_data_/media/images/image.jpg"
-              },
-              "icon": "lucide-image",
-              "title": "image"
-            }
-          },
-          {
             "id": "890412b42328447a",
             "type": "leaf",
             "state": {
@@ -53,28 +41,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Culture Case/Cloudflare access.md",
+                "file": "Projects/Home Assistant/Cloudflared in proxmox LXC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cloudflare access"
+              "title": "Cloudflared in proxmox LXC"
             }
           },
           {
-            "id": "ef65668dc283328b",
+            "id": "40f5731cbba6fdb0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "_data_/media/images/Image 28.02.2026 at 17.28.png"
+                "file": "Projects/Home Assistant/HA Migration to New Proxmox.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Image 28.02.2026 at 17.28"
+              "icon": "lucide-file",
+              "title": "HA Migration to New Proxmox"
+            }
+          },
+          {
+            "id": "9c5e8cfa3d88347a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Proxmox/Proxmox Debian VM Setup.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Proxmox Debian VM Setup"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -271,53 +275,53 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "6c66d686ce22bbf1",
+  "active": "9c5e8cfa3d88347a",
   "lastOpenFiles": [
-    "_data_/media/images/Screenshot 2026-02-28 at 18.24.05.png",
-    "Projects/Culture Case/jpeg.md",
-    "Projects/Culture Case/Cloudflare access.md",
+    "Projects/Proxmox/Install Immich in vm.md",
+    "Projects/Proxmox/Proxmox Debian VM Setup.md",
+    "Projects/Home Assistant/Proxmox HA Cloudflare Tunnel Setup.md",
+    "Projects/Proxmox/Proxmox-HA-Cloudflare-Tunnel-Setup.md",
+    "Projects/Proxmox/Untitled.md",
+    "Projects/Home Assistant/Cloudflared in proxmox LXC.md",
+    "Projects/Home Assistant/HA Migration to New Proxmox.md",
+    "Resources/Docker.md",
+    "Projects/Proxmox",
+    "Resources/Linux CLI.md",
+    "_data_/media/images/Screenshot 2026-03-20 at 00.52.59.png",
+    "Projects/Culture Case/Music Assistant.md",
+    "Projects/Culture Case/Teclast N150.md",
     "Element Structure and Formats.md",
-    "_data_/media/images/Image 28.02.2026 at 17.28.png",
     "_data_/media/images/image.jpg",
+    "_data_/media/images/Image 28.02.2026 at 17.28.png",
+    "Projects/Projects.md",
+    "Projects/Culture Case/Cloudflare access.md",
+    "Projects/Culture Case/Android ADB Integration.md",
+    "Projects/Culture Case/jpeg.md",
+    "_data_/media/images/Screenshot 2026-02-28 at 18.24.05.png",
     "pininfo.md",
     "README.md",
-    "Projects/Home Assistant/Cloudflared in proxmox LXC.md",
     "_data_/media/images/squeezelite.jpeg.jpeg",
     "_data_/media/images/IMG_5720.jpeg",
     "_data_/media/example-image-02.png",
     "_data_/media/example-image-01.png",
     "_data_/media/dashboard-preview.png",
-    "Projects/Home Assistant/HA Migration to New Proxmox.md",
-    "Projects/Home Assistant/Proxmox HA Cloudflare Tunnel Setup.md",
     "Projects/Home Assistant/GPT Voice Assist.md",
     "Projects/Home Assistant/Notes",
     "Projects/Home Assistant/Proxmox HA Cloudflare Tunnel Setup 1.md",
     "Resources/Prompt Engineering UA-01.md",
     "Projects/Home Assistant/Use free domain with cloudflare.md",
-    "Projects/Culture Case/Android ADB Integration.md",
     "Resources/Git help.md",
-    "Projects/Culture Case/Music Assistant.md",
-    "Projects/Culture Case/Teclast N150.md",
     "Projects/Culture Case/ESP Ethernet.md",
     "_data_/excalidraw/Drawing 2025-12-06 18.06.49.md",
     "Notes/MCP - Model Context Protocol Tutorial.md",
-    "_data_/excalidraw/gpt voice assist 2025-12-06 18.29.08.md",
     "_data_/media/images",
     "Projects/Culture Case",
-    "Notes/MCP resource link.md",
-    "Notes/N8N.md",
-    "Projects/Home Assistant/VoiceCommander.md",
-    "Projects/Projects.md",
     "Projects/Home Assistant/Untitled.base",
     "_data_/media/banners/banner-concept-board.jpg",
     "Projects/Home Assistant/Untitled 1.base",
-    "_data_/media/banners/banner-dashboard.jpg",
-    "Resources/Resources Dashboard.md",
     "_data_/excalidraw",
     "Projects/Home Assistant",
     "Learning/LLM/Assignments",
-    "Learning/LLM/Notes",
-    "Learning/LLM/Lectures",
-    "_data_/media/banners/banner-personal-01.jpg"
+    "Learning/LLM/Notes"
   ]
 }

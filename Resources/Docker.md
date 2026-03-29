@@ -91,6 +91,12 @@ sudo systemctl enable docker
 sudo systemctl start docker
 ```
 
+Щоб запускати Docker без  sudo :
+```shell
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
 Verify it's running:
 
 ```bash

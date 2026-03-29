@@ -86,9 +86,6 @@ ifreload -a
 echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
 sysctl -p
 
-# Allow return traffic first (MUST be first rule)
-iptables -I FORWARD 1 -m state --state RELATED,ESTABLISHED -j ACCEPT
-
 # NAT: masquerade internal net through client LAN interface
 iptables -t nat -A POSTROUTING -s 10.10.10.0/24 -o vmbr0 -j MASQUERADE
 
@@ -97,6 +94,9 @@ iptables -I FORWARD -i vmbr1 -o vmbr0 -j ACCEPT
 
 # Block: prevent client LAN from reaching internal net
 iptables -I FORWARD -i vmbr0 -o vmbr1 -j DROP
+
+# Allow return traffic first (MUST be first rule)
+iptables -I FORWARD 1 -m state --state RELATED,ESTABLISHED -j ACCEPT
 
 # Persist rules across reboots
 apt install -y iptables-persistent
@@ -119,8 +119,25 @@ Expected FORWARD chain order:
 3. ACCEPT  vmbr1 → vmbr0         ← allow infra → internet
 ```
 
+Як швидко виправити (iptables)
 ---
+1.	Подивись номери правил (щоб точно прибрати/обійти DROP):
 
+```bash
+iptables -L FORWARD --line-numbers -n -v
+
+Chain FORWARD (policy ACCEPT 185 packets, 11296 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        5   420 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED
+2        6   504 DROP       all  --  vmbr0  vmbr1   0.0.0.0/0            0.0.0.0/0           
+3        7   588 ACCEPT     all  --  vmbr1  vmbr0   0.0.0.0/0            0.0.0.0/0 
+```
+
+3.	Або (ще краще, якщо це не було навмисною ізоляцією) — видали DROP-правило:
+
+```bash
+iptables -D FORWARD <N>
+```
 ## Step 3 — HA VM: Add Second NIC in Proxmox UI
 
 1. Select HA VM → **Hardware** tab
@@ -137,7 +154,69 @@ After reboot, HA VM has:
 - `net1` (enp6s19) → `vmbr1` — internal net, to be configured static
 
 ---
+### Що налаштувати в Ubuntu VM (Наприклад для Immich vm)
+Спочатку всередині Immich VM подивись назви інтерфейсів:
+```shell
+ip a
+ip route
+```
+Ти маєш побачити два інтерфейси, щось на кшталт  ens18  і  ens19 ; перший зазвичай буде LAN-інтерфейсом, другий — новий внутрішній NIC.
+Потім відкрий netplan:
+```shell
+sudo nano /etc/netplan/50-cloud-init.yaml
 
+```
+або інший файл у  /etc/netplan/ , який реально використовується в системі. Схема має бути такою:
+```shell
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens18:
+      dhcp4: true
+    ens19:
+      dhcp4: false
+      addresses:
+        - 10.10.10.4/24
+```
+Тут важливий момент: на  ens19  не додавай  gateway4 ,  routes: - to: default , або DNS, якщо це лише внутрішня мережа. Саме відсутність другого default route і є тим, що дає тобі той самий результат, що в HA-файлі.
+
+#### Якщо основний NIC у тебе статичний
+Тоді netplan може виглядати так:
+```shell
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens18:
+      dhcp4: false
+      addresses:
+        - 192.168.1.50/24
+      routes:
+        - to: default
+          via: 192.168.1.1
+      nameservers:
+        addresses:
+          - 1.1.1.1
+          - 8.8.8.8
+    ens19:
+      dhcp4: false
+      addresses:
+        - 10.10.10.4/24
+```
+Ubuntu і Netplan підтримують саме таку модель: тільки один інтерфейс отримує default route, а другий має лише адресу своєї локальної підмережі.
+#### Як застосувати і перевірити
+Перед застосуванням:
+```shell
+sudo netplan generate
+sudo netplan try
+```
+ netplan try  безпечніший, бо дозволяє відкотити зміни, якщо ти випадково ламаєш доступ до VM.
+Після цього перевір:
+```shell
+ip a
+ip route
+```
 ## Step 4 — Home Assistant: Configure NIC1 (Client LAN)
 
 In HA web UI:
@@ -403,14 +482,14 @@ https://madeira-proxmox.grykos.pp.ua   # Proxmox UI
 
 ## Troubleshooting
 
-| Symptom | Likely Cause | Fix |
-|---------|-------------|-----|
-| LXC can't ping 8.8.8.8 | Missing `RELATED,ESTABLISHED` FORWARD rule | `iptables -I FORWARD 1 -m state --state RELATED,ESTABLISHED -j ACCEPT` |
-| HA unreachable via tunnel | Missing trusted_proxies in HA | Add `10.10.10.0/24` to `http.trusted_proxies` |
-| Two default routes in HA | Gateway set on NIC2 | Re-run `ha network update enp6s19` without `--ipv4-gateway` |
-| Proxmox vmbr0 has no IP | DHCP failed on client network | Check physical cable, `journalctl -u networking` |
-| Cloudflared tunnel unhealthy | LXC has no internet | Fix NAT/FORWARD iptables rules |
-| 502 Bad Gateway on HA URL | cloudflared can't reach 10.10.10.2 | Check NIC2 is up in HA, check vmbr1 bridge |
+| Symptom                      | Likely Cause                               | Fix                                                                    |
+| ---------------------------- | ------------------------------------------ | ---------------------------------------------------------------------- |
+| LXC can't ping 8.8.8.8       | Missing `RELATED,ESTABLISHED` FORWARD rule | `iptables -I FORWARD 1 -m state --state RELATED,ESTABLISHED -j ACCEPT` |
+| HA unreachable via tunnel    | Missing trusted_proxies in HA              | Add `10.10.10.0/24` to `http.trusted_proxies`                          |
+| Two default routes in HA     | Gateway set on NIC2                        | Re-run `ha network update enp6s19` without `--ipv4-gateway`            |
+| Proxmox vmbr0 has no IP      | DHCP failed on client network              | Check physical cable, `journalctl -u networking`                       |
+| Cloudflared tunnel unhealthy | LXC has no internet                        | Fix NAT/FORWARD iptables rules                                         |
+| 502 Bad Gateway on HA URL    | cloudflared can't reach 10.10.10.2         | Check NIC2 is up in HA, check vmbr1 bridge                             |
 
 ---
 
