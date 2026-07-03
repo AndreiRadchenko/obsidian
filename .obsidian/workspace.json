@@ -55,30 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Home Assistant/HA Migration to New Proxmox.md",
+                "file": "Projects/Home Assistant/Reolink Doorbell in Scrypted.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HA Migration to New Proxmox"
-            }
-          },
-          {
-            "id": "9c5e8cfa3d88347a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Resources/Linux CLI.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linux CLI"
+              "title": "Reolink Doorbell in Scrypted"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hardening",
+                "query": "visual studio",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -275,53 +261,53 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "9c5e8cfa3d88347a",
+  "active": "40f5731cbba6fdb0",
   "lastOpenFiles": [
+    "Projects/Suppoint-bot/payment-description.md",
+    "Projects/Home Assistant/Reolink Doorbell in Scrypted.md",
+    "Projects/Home Assistant/All Notes.md",
+    "Projects/Home Assistant/Notes/untitled note.md",
+    "Projects/Suppoint-bot/Odroid.md",
     "Projects/Proxmox/Proxmox MacBook Thin Client Workflow.md",
+    "Resources/Linux CLI.md",
+    "_data_/media/images/Screenshot 2026-06-22 at 13.10.37.png",
+    "Projects/Projects.md",
+    "_data_/media/images/Screenshot 2026-06-22 at 12.29.45.png",
+    "_data_/media/images/Screenshot 2026-06-19 at 12.06.53.png",
+    "Projects/Home Assistant/HA Migration to New Proxmox.md",
+    "Projects/Suppoint-bot/Untitled 2.base",
+    "Projects/Suppoint-bot/Untitled.base",
+    "Projects/Suppoint-bot/Untitled 1.base",
+    "Projects/Culture Case/Cloudflare access.md",
+    "_data_/media/images/Screenshot 2026-06-09 at 14.50.07.png",
+    "_data_/media/banners/banner-journal.jpg",
+    "_data_/media/banners/banner-inbox.jpg",
+    "Projects/Suppoint-bot",
+    "Projects/untitled folder",
+    "Projects/Home Assistant/Proxmox HA Cloudflare Tunnel Setup.md",
+    "_data_/media/images/Screenshot 2026-04-10 at 22.22.19.png",
     "Projects/Proxmox/Proxmox Debian VM Setup.md",
     "Resources/Git help.md",
+    "_data_/media/images/Screenshot 2026-04-01 at 19.42.23.png",
+    "_data_/media/images/Screenshot 2026-04-01 at 19.35.55.png",
+    "_data_/media/images/Screenshot 2026-04-01 at 19.33.47.png",
     "Projects/Proxmox/Install Immich in vm.md",
-    "Projects/Home Assistant/Proxmox HA Cloudflare Tunnel Setup.md",
     "Projects/Proxmox/Proxmox-HA-Cloudflare-Tunnel-Setup.md",
     "Projects/Proxmox/Untitled.md",
     "Projects/Home Assistant/Cloudflared in proxmox LXC.md",
-    "Projects/Home Assistant/HA Migration to New Proxmox.md",
     "Resources/Docker.md",
     "Projects/Proxmox",
-    "Resources/Linux CLI.md",
-    "_data_/media/images/Screenshot 2026-03-20 at 00.52.59.png",
     "Projects/Culture Case/Music Assistant.md",
     "Projects/Culture Case/Teclast N150.md",
     "Element Structure and Formats.md",
-    "_data_/media/images/image.jpg",
-    "_data_/media/images/Image 28.02.2026 at 17.28.png",
-    "Projects/Projects.md",
-    "Projects/Culture Case/Cloudflare access.md",
     "Projects/Culture Case/Android ADB Integration.md",
     "Projects/Culture Case/jpeg.md",
-    "_data_/media/images/Screenshot 2026-02-28 at 18.24.05.png",
     "pininfo.md",
     "README.md",
-    "_data_/media/images/squeezelite.jpeg.jpeg",
-    "_data_/media/images/IMG_5720.jpeg",
-    "_data_/media/example-image-02.png",
-    "_data_/media/example-image-01.png",
-    "_data_/media/dashboard-preview.png",
     "Projects/Home Assistant/GPT Voice Assist.md",
     "Projects/Home Assistant/Notes",
-    "Projects/Home Assistant/Proxmox HA Cloudflare Tunnel Setup 1.md",
-    "Resources/Prompt Engineering UA-01.md",
-    "Projects/Home Assistant/Use free domain with cloudflare.md",
-    "Projects/Culture Case/ESP Ethernet.md",
-    "_data_/excalidraw/Drawing 2025-12-06 18.06.49.md",
     "_data_/media/images",
     "Projects/Culture Case",
-    "Projects/Home Assistant/Untitled.base",
-    "_data_/media/banners/banner-concept-board.jpg",
-    "Projects/Home Assistant/Untitled 1.base",
-    "_data_/excalidraw",
-    "Projects/Home Assistant",
-    "Learning/LLM/Assignments",
-    "Learning/LLM/Notes"
+    "Projects/Home Assistant/Untitled.base"
   ]
 }

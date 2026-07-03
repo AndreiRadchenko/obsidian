@@ -67,6 +67,8 @@ connect to remote server:
 ```
 mkdir -p ~/sshfs_local 
 sshfs -o defer_permissions,volname=SSHFS_ROOT andrii@100.76.127.96:/home/andrii/suppoint-bot ~/sshfs_local
+%% The cleanest approach is Option 1 — force-unmount the leftover stale mount, then remount fresh. %%
+sudo umount -f ~/sshfs_local/
 ```
 
 
@@ -235,6 +237,40 @@ networkctl status eno1
 - `nmcli dev status` - Display network status.
 - `nmcli con show` - Show active network connections.
 - `systemctl restart networking` - Restart networking service.
+
+### Host discovering:
+```
+nmap -sn 192.168.0.0/24
+```
+Full port scan on ip's:
+```
+nmap -Pn -p- --open 192.168.0.151 192.168.0.157 192.168.0.165
+```
+
+### `nc` stands for **netcat** — it's a raw TCP/UDP connection tool, often called the "Swiss Army knife" of networking.
+
+## What the flags mean
+
+| Flag | Meaning |
+|------|---------|
+| `nc` | netcat — opens a raw TCP connection |
+| `-v` | verbose — prints connection status (connected/refused/timeout) |
+| `-z` | zero I/O — just check if port is open, don't send data |
+| `-w1` | timeout after 1 second if no response |
+
+## What `nc -v 192.168.0.151 6668` does
+
+1. Tries to open a TCP connection to `192.168.0.151` on port `6668`
+2. If it **connects** — prints `Connection to 192.168.0.151 6668 port [tcp/*] succeeded!` and then waits, showing any data the server sends
+3. If it **fails** — prints `Connection refused` or times out
+
+## What to expect when connecting to Deye logger
+
+If it's the logger, after connecting you'll either see:
+- **Binary garbage** — raw SolarmanV5 protocol data (good sign!)
+- **Silence** — connected but waiting for you to send a request first
+- `Connection refused` — wrong port or not the logger
+
 
 ## System Monitoring and Process Management
 
